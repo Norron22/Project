@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.2rem;
+}
+
+/* Conteneur de l'image principale */
+.image-container {
+    text-align: center;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh; /* Empêche l'image de dépasser l'écran */
+    border-radius: 10px;
+}
+
+/* Navigation des images */
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-50%);
+    padding: 0 20px;
+}
+
+.nav-img {
+    width: 120px; /* Taille réduite des miniatures */
+    height: auto;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.2s;
+    border-radius: 10px;
+}
+
+.nav-img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Styles pour la page d'accueil */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.text-zone {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.banner img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.banner img:hover {
+    transform: scale(1.1);
+}
+
+.image-button {
+    background-color: #8ed1fc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.image-button:hover {
+    background-color: #68b0f5;
+}
+
+/* Ajout des styles pour la galerie d'images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colonnes flexibles */
+    gap: 10px;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.gallery a {
+    display: block;
+}
+
+.gallery img {
+    width: 100%; /* Remplit l’espace de la colonne */
+    height: 150px; /* Hauteur uniforme pour toutes les images */
+    object-fit: cover; /* Recadre les images sans déformation */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.comments-section {
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.comments-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.comments-section li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.comments-section textarea {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.comments-section button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #68b0f5;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comments-section button:hover {
+    background-color: #5598e0;
+}

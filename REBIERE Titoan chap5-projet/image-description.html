@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un commentaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="/images-page" class="back-button">← Retour</a>
+    <h1>Ajouter un commentaire</h1>
+    <form action="/image-description" method="POST">
+        <label for="imageId">Numéro de l'image :</label>
+        <input type="text" id="imageId" name="imageId" required>
+        
+        <label for="comment">Votre commentaire :</label>
+        <textarea id="comment" name="comment" required></textarea>
+        
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
